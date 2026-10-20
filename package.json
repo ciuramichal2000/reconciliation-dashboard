@@ -1,0 +1,11 @@
+{
+  "name": "reconciliation-dashboard",
+  "version": "0.1.0",
+  "description": "A small browser dashboard for the output of invoice-reconciler",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "serve": "python -m http.server 8080"
+  },
+  "license": "MIT"
+}
