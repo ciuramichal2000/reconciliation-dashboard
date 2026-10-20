@@ -33,6 +33,8 @@ npm test                 # node --test, 6 tests, no dependencies
 Covered: flattening, per-status counts, money sums per currency, filters, money formatting with a fallback for unknown currency codes, and report validation.
 The page itself was checked in a real browser: cards and counts, status filter, text search, the empty state, the error state and the escaping of markup in the data.
 
+CI: a GitHub Actions workflow (`.github/workflows/tests.yml`) is included; it runs once the repository is on GitHub (it has not been run yet).
+
 ## Stack
 
 JavaScript (ES modules), HTML, CSS, Node test runner, Git.
