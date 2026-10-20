@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reconciliation dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Invoice reconciliation</h1>
+    <p class="sub">Shows the result of <code>invoice-reconciler</code>. Load another report with <code>?src=URL</code>.</p>
+    <p id="error" class="error" role="alert" hidden></p>
+    <section id="summary" class="cards" aria-label="Summary"></section>
+    <p id="open-money" class="open"></p>
+    <section class="controls">
+      <label>Status
+        <select id="status">
+          <option value="all">All</option>
+          <option value="matched">Matched</option>
+          <option value="amount_mismatch">Amount mismatch</option>
+          <option value="unpaid_invoices">Unpaid invoice</option>
+          <option value="unmatched_payments">Unmatched payment</option>
+        </select>
+      </label>
+      <label>Search
+        <input id="search" type="search" placeholder="invoice number or note">
+      </label>
+      <span id="count-shown" class="shown"></span>
+    </section>
+    <table>
+      <thead><tr><th>Status</th><th>Reference</th><th class="num">Amount</th><th>Note</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p id="empty" class="empty" hidden>Nothing matches these filters.</p>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

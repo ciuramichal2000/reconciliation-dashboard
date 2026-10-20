@@ -1,0 +1,20 @@
+{
+  "matched": [
+    {"invoice": "FV/2026/001", "payment_id": 1, "difference": 0.0},
+    {"invoice": "FV/2026/007", "payment_id": 4, "difference": 0.0},
+    {"invoice": "BO-5530", "payment_id": 6, "difference": 0.0}
+  ],
+  "amount_mismatch": [
+    {"invoice": "BO-5521", "payment_id": 2, "difference": -5.0},
+    {"invoice": "GC-81", "payment_id": 5, "difference": 12.5}
+  ],
+  "unpaid_invoices": [
+    {"invoice": "GC-77", "total": 59.9, "currency": "EUR"},
+    {"invoice": "FV/2026/009", "total": 480.1, "currency": "EUR"},
+    {"invoice": "US-104", "total": 250.0, "currency": "USD"}
+  ],
+  "unmatched_payments": [
+    {"payment_id": 3, "amount": 300.0, "currency": "EUR", "description": "Unknown sender"},
+    {"payment_id": 7, "amount": 45.0, "currency": "USD", "description": "<b>refund?</b> check with the bank"}
+  ]
+}
